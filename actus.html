@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eurocks - Actus</title>
+  <link rel="stylesheet" href="css/actus.css" />
+</head>
+<body>
+  <section class="header">
+    <div class="badge-eurocks">
+      <img src="img/img-devant.png" alt="Eurockéennes">
+    </div>
+    <div class="texte-header">
+      <h2>Communiqué De Presse</h2>
+      <p>le 15/02/2025</p>
+    </div>
+  </section>
+
+  <h1 class="reveal">Les Eurockéennes s’engagent pour un <br>festival plus accessible à tous</h1>
+
+  <p class="sous-titre reveal">— Dans une volonté d’allier musique, culture et engagement sociétal, les Eurockéennes de Belfort <br>
+    franchissent une nouvelle étape vers l’inclusion. Cette année, le festival met à l’honneur un axe fort :</p>
+  <p class="sous-titre-bold reveal">l’accessibilité pour les personnes en situation de handicap</p>
+
+  <section class="engagement-section reveal">
+    <div class="engagement-block">
+      <h2>Des actions concrètes</h2>
+      <p>L’organisation met en place une série de dispositifs destinés à faciliter l’expérience des festivaliers handicapés :</p>
+      <ul>
+        <li>Rampes d’accès, plateformes PMR et sanitaires adaptés</li>
+        <li>Signalétique inclusive (pictogrammes, contrastes visuels, etc.)</li>
+        <li>Bénévoles formés à l’accueil de tous les publics</li>
+      </ul>
+
+      <h2>Un parcours immersif et pédagogique</h2>
+      <p>
+        Pour sensibiliser l’ensemble du public, un "Parcours Festivalier Inclusif" est proposé sur le site :
+        <br>
+        Une expérience ludique à travers des zones interactives où chacun peut vivre, le temps d’un instant, la réalité de l’accessibilité. Un jeu de rôle éducatif qui mêle immersion, réflexion… et récompense.
+      </p>
+
+      <h2>Un engagement durable</h2>
+      <p>
+        Ce projet est porté en collaboration avec des associations spécialisées, des étudiants en création, audiovisuel et 3D, ainsi que des partenaires institutionnels. Il s’inscrit dans une démarche globale visant à faire du festival un modèle culturel inclusif et responsable, au croisement de l’art, de la technologie et de l’éthique.
+      </p>
+      <p>
+        Ce projet s’inscrit aussi dans une logique de transversalité avec les autres ODD, en lien avec la transition écologique (accessibilité bas carbone) et l’égalité des genres (formation à l’inclusion non genrée).
+      </p>
+      <p>
+        📍Rendez-vous du 4 au 6 juillet 2025 à Belfort pour une édition engagée, vibrante… et inclusive.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-presse reveal">
+    <div class="contact-titre">
+      <h2>Contact presse:</h2>
+    </div>
+    <div class="contact-texte">
+      <p>Pour tous contact veuillez vous adressez ci-joint</p>
+    </div>
+    <div class="contact-infos">
+      <div class="contact-col"><strong>www.eurokenne.com</strong></div>
+      <div class="contact-col"><strong>eurockeene@gmail.com</strong></div>
+      <div class="contact-col"><strong>01 030 939393</strong></div>
+    </div>
+  </section>
+
+  <!-- Scroll reveal -->
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
