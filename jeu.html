@@ -25,8 +25,8 @@
 
     </div>
 </header>
-    <h1>Notre Jeu</h1>
-    <iframe src="jeu/index.html" allowfullscreen></iframe>
+    <h1 class="fade-in">Notre Jeu</h1>
+    <iframe class="fade-in" src="jeu/index.html" allowfullscreen></iframe>
 
 <footer class="site-footer">
   <div class="alignement">
@@ -53,5 +53,19 @@
             </div>
 </footer>
     <script src="js/gamification.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function revealOnScroll() {
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 60) {
+        el.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+});
+</script>
 </body>
 </html>

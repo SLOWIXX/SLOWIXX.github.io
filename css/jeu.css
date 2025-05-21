@@ -48,7 +48,7 @@ iframe {
   background: #F4F4F9;
   display: block;
   z-index: 1;
-  margin-top: -10rem;
+  margin-top: -2rem;
 }
 
 
@@ -59,4 +59,15 @@ h1 {
   color: #2F3E46;
   font-family: "Futura",  sans-serif;
 
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

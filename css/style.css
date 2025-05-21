@@ -130,8 +130,8 @@ h2 {
   padding: 40px; /* agrandi */
   border-radius: 20px;
   width: 100%;
-  max-width: 600px; /* plus large */
-  min-width: 300px;
+  max-width: 500px; /* plus large */
+  min-width: 250px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* ombre plus douce */
   color: #CAD2C5;
   flex: 1 1 45%;
