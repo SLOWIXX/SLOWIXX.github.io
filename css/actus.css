@@ -30,61 +30,9 @@
 
 }
 
-  .badge-eurocks {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 260px;          
-    height: 140px;         
-    background-color: #c7b6d6;
-    border-radius: 12px;      
-    transform: rotate(-10deg); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 999;
-    overflow: hidden;  
-    font-family: "Futura",  sans-serif;
-     
-  }
-  
-  .badge-eurocks img {
-    width: 220px;              
-    height: auto;
-    display: block;
-  }
-  
-  
-  
-.header {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    padding: 20px; 
-    font-family: "Futura",  sans-serif;
 
-}
-
-.badge-eurocks {
-    flex: 0 0 auto;
-}
-
-.texte-header {
-    flex: 0 0 auto; 
-    margin-left: auto; 
-    text-align: right;
-    font-family: "Futura",  sans-serif;
-
-}
-
-/* gris  2F3E46 */
-/* blanc F4F4F9
-vert 57A773
-rose BA2C73 */
 
 h2 {
-    font-family: 'Futura', sans-serif;
     font-size: 24px; 
     color: #2F3E46; 
     margin: 0; 
@@ -99,7 +47,6 @@ h1 {
   color: #2F3E46;
   margin-top: 5%;
   font-weight: bold;
-  font-family: "Futura",  sans-serif;
 
 }
 
@@ -221,4 +168,65 @@ h1 {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .engagement-block {
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+  .contact-infos {
+    flex-direction: column;
+  }
+  .contact-col {
+    border-right: none;
+    border-bottom: 1px solid #5a3c30;
+    padding: 12px 10px;
+  }
+  .contact-col:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .sous-titre, .sous-titre-bold {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .engagement-section {
+    padding: 24px 5px;
+  }
+  .engagement-block h2 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .engagement-block {
+    font-size: 0.95rem;
+    padding: 0 2px;
+  }
+  .contact-titre h2 {
+    font-size: 1.2rem;
+  }
+  .contact-infos {
+    flex-direction: column;
+    font-size: 0.95rem;
+  }
+  .contact-col {
+    padding: 10px 5px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  .contact-titre h2 {
+    font-size: 1rem;
+  }
 }
