@@ -25,11 +25,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Futura";
-  background-color: #1f2f38;
-  color: #dcdcd2;
+  font-family: "Futura", sans-serif;
+  background-color: #F4F4F9;
+  color: #2F3E46;
 }
-
 
 h2 {
   margin-top: 0;
@@ -94,15 +93,14 @@ h2 {
 .presentation {
   padding: 60px 20px;
   text-align: center;
-  background-color: #1f2f38;
-
+  background-color: #F4F4F9;
 }
 
 .presentation h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #F7C100;
-  font-family: "Futura",  sans-serif;
+  color: #BA2C73;
+  font-family: "Futura", sans-serif;
 }
 
 .presentation p {
@@ -110,9 +108,8 @@ h2 {
   max-width: 800px;
   margin: auto;
   line-height: 1.6;
-  color: #dcdcd2;
-  font-family: "Futura",  sans-serif;
-
+  color: #2F3E46;
+  font-family: "Futura", sans-serif;
 }
 
 .infos {
@@ -121,46 +118,45 @@ h2 {
   justify-content: center;
   gap: 40px;
   padding: 60px 5%;
-  background-color: #1f2f38;
+  background-color: #F4F4F9;
   font-family: "Futura", sans-serif;
 }
 
 .bloc {
-  background-color: #2f3e46;
-  padding: 40px; /* agrandi */
+  background-color: #fff;
+  padding: 40px;
   border-radius: 20px;
   width: 100%;
-  max-width: 500px; /* plus large */
+  max-width: 500px;
   min-width: 250px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* ombre plus douce */
-  color: #CAD2C5;
+  box-shadow: 0 8px 24px rgba(47,62,70,0.07);
+  color: #2F3E46;
   flex: 1 1 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem; /* espacement interne entre les éléments */
+  gap: 1rem;
+  border-left: 6px solid #BA2C73;
+}
+
+.bloc h3 {
+  margin-bottom: 20px;
+  color: #57A773;
+  font-size: 1.6rem;
+  font-family: "Futura", sans-serif;
 }
 
 .bloc p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #dcdcd2;
+  color: #2F3E46;
 }
 
-
-.bloc h3 {
-  margin-bottom: 20px;
-  color: #F7C100;
-  font-size: 1.6rem;
-}
 
 .bloc ul {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #dcdcd2;
-}
-
-.bloc ul {
+  color: #2F3E46;
   padding-left: 1.2rem;
   list-style-type: "🎵 ";
   margin-top: 10px;
@@ -171,37 +167,26 @@ h2 {
   align-self: flex-start;
   margin-top: 25px;
   padding: 10px 20px;
-  background-color: #F7C100;
-  color: #1f2f38;
+  background-color: #57A773;
+  color: #fff;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
   font-family: "Futura", sans-serif;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
 }
 
 .btn:hover {
-  background-color: #7bb274;
+  background-color: #BA2C73;
+  color: #fff;
   transform: scale(1.05);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Artistes / Programme */
 .artiste {
   padding: 60px 20px;
-  background-color: #1f2f38;
+  background-color: #2F3E46;
   font-family: 'Futura', sans-serif;
   overflow: hidden;
 }
@@ -209,8 +194,9 @@ h2 {
 .artiste h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #F7C100;
+  color: #F4F4F9;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .carousel-container {
@@ -225,19 +211,18 @@ h2 {
   width: max-content;
 }
 
-
-
 .card {
   position: relative;
-  background-color: #2f3e46;
+  background-color: #fff;
   border-radius: 15px;
   width: 300px;
   flex-shrink: 0;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 10px rgba(47,62,70,0.10);
   overflow: hidden;
   text-align: center;
-  color: #dcdcd2;
+  color: #2F3E46;
   transition: transform 0.3s ease;
+  border: 2px solid #BA2C73;
 }
 
 .card img {
@@ -252,7 +237,7 @@ h2 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  background: linear-gradient(to top, rgba(47,62,70,0.85), transparent 80%);
   padding: 10px;
 }
 
@@ -262,7 +247,7 @@ h2 {
   font-size: 1.8rem;
   margin: 10px 0;
   font-weight: bold;
-  color: #F7C100;
+  color: #57A773;
   font-family: "Futura", sans-serif;
 }
 
@@ -270,15 +255,26 @@ h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   font-family: "Futura", sans-serif;
+  color: #F4F4F9;
 }
 
+/* Objectifs / Gamification */
 .objectifs {
   width: 80%;
   max-width: 600px;
-  background: #2f3e46;
+  background: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(47,62,70,0.10);
+  margin: 0 auto;
+  border-left: 6px solid #57A773;
+}
+
+.objectifs h2 {
+  color: #BA2C73;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .goal-item {
@@ -286,13 +282,16 @@ h2 {
   align-items: center;
   margin: 10px 0;
   padding: 10px;
-  background: #3a4d59;
+  background: #F4F4F9;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-size: 1.1rem;
+  color: #2F3E46;
+  border-left: 4px solid #57A773;
 }
 
 .goal-item:hover {
-  background-color: #5c6b74;
+  background-color: #EAF7F0;
 }
 
 .goal-item .goal-text {
@@ -301,6 +300,7 @@ h2 {
 
 .goal-item .goal-icon {
   margin-left: 10px;
+  font-size: 1.3em;
 }
 
 .progression-container {
@@ -315,6 +315,7 @@ h2 {
   font-weight: bold;
   margin-bottom: 8px;
   text-align: center;
+  color: #BA2C73;
 }
 
 .progress-bar {
@@ -323,12 +324,13 @@ h2 {
   background: #eee;
   border-radius: 10px;
   overflow: hidden;
+  border: 2px solid #57A773;
 }
 
 .progress {
   height: 100%;
   width: 0;
-  background: #4CAF50;
+  background: linear-gradient(90deg, #57A773 60%, #BA2C73 100%);
   transition: width 0.3s;
 }
 
@@ -336,12 +338,14 @@ h2 {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #5cb85c;
+  background-color: #57A773;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   display: none;
   animation: popupAnimation 1s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(47,62,70,0.10);
 }
 
 @keyframes popupAnimation {
@@ -353,12 +357,106 @@ h2 {
 .centre {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* évite le centrage vertical complet */
+  align-items: flex-start;
   min-height: unset;
   height: auto;
-  margin-bottom: 24px; /* réduit l'écart avec le footer */
+  margin-bottom: 24px;
 }
 
+/* Footer harmonisé */
 .site-footer {
-  margin-top: 24px; /* réduit l'écart au-dessus du footer */
+  background: #2F3E46;
+  color: #F4F4F9;
+  margin-top: 24px;
+  padding-top: 2rem;
+  border-top: 4px solid #BA2C73;
+}
+
+.site-footer .footer-logo {
+  filter: grayscale(0) brightness(1.1);
+}
+
+.site-footer .socials #suivez {
+  color: #57A773;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.site-footer .footer-texte-droits,
+.site-footer .footer-mentions a {
+  color: #F4F4F9;
+}
+
+.site-footer .footer-mentions a:hover {
+  color: #BA2C73;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #57A773;
+  margin: 1.5rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .infos {
+    flex-direction: column;
+    gap: 24px;
+    padding: 30px 2vw;
+  }
+  .bloc {
+    max-width: 98vw;
+    padding: 24px;
+  }
+  .objectifs {
+    width: 98vw;
+    padding: 12px;
+  }
+  .progress-bar {
+    width: 90vw;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .presentation h2,
+  .artiste h2,
+  .objectifs h2 {
+    font-size: 1.3rem;
+  }
+  .bloc {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  .card {
+    width: 90vw;
+    min-width: 220px;
+    border-radius: 10px;
+  }
+  .carousel {
+    gap: 10px;
+  }
+  .objectifs {
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .goal-item {
+    font-size: 1rem;
+    padding: 7px;
+  }
+  .progress-bar {
+    height: 12px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bloc, .objectifs {
+    padding: 6px;
+  }
+  .card {
+    min-width: 160px;
+  }
 }

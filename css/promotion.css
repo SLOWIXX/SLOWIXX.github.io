@@ -3,70 +3,77 @@
     src: url('../fonts/futura/Futura-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-  }
-  
-
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Futura", sans-serif;
   background-color: #F4F4F9;
-  font-family: "Futura",  sans-serif;
-
+  color: #2F3E46;
+  min-height: 100vh;
 }
 
-
-
 h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #2F3E46;
-    font-family: "Futura",  sans-serif;
-
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #BA2C73;
+  margin-top: 2.5rem;
+  letter-spacing: 1px;
 }
 
 h2 {
-    margin-top: 5rem;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2F3E46;
-    text-align: center;
-    font-family: "Futura",  sans-serif;
-
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #57A773;
+  text-align: center;
+  font-family: "Futura", sans-serif;
 }
 
 .texte-pitch {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #426375;
-    margin-left: 5%;
-    font-family: "Futura",  sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2F3E46;
+  background: #fff;
+  border-left: 6px solid #BA2C73;
+  border-radius: 0 18px 18px 0;
+  margin: 2rem auto 2.5rem auto;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  max-width: 800px;
+  box-shadow: 0 4px 24px rgba(47,62,70,0.07);
+}
 
+.video-pitch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0 3rem 0;
 }
 
 .video-pitch iframe {
-
-  width: 60%;
-  height: 40rem;
-  border: none;
-  margin-left: 20%;
-  margin-top: 3rem;
+  width: 100%;
+  max-width: 700px;
+  height: 40vw;
+  max-height: 400px;
+  min-height: 220px;
+  border: 4px solid #2F3E46;
+  border-radius: 18px;
+  background: #F4F4F9;
+  box-shadow: 0 4px 24px rgba(47,62,70,0.07);
 }
 
 .fade-in {
@@ -78,4 +85,74 @@ h2 {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Footer adjustments for color harmony */
+.site-footer {
+  background: #2F3E46;
+  color: #F4F4F9;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 4px solid #BA2C73;
+}
+
+.site-footer .footer-logo {
+  filter: grayscale(0) brightness(1.1);
+}
+
+.site-footer .socials #suivez {
+  color: #57A773;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.site-footer .footer-texte-droits,
+.site-footer .footer-mentions a {
+  color: #F4F4F9;
+}
+
+.site-footer .footer-mentions a:hover {
+  color: #BA2C73;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #57A773;
+  margin: 1.5rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .texte-pitch {
+    font-size: 1.1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    max-width: 95vw;
+  }
+  .video-pitch iframe {
+    max-width: 98vw;
+    height: 45vw;
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .texte-pitch {
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    border-radius: 0 10px 10px 0;
+  }
+  .video-pitch iframe {
+    height: 38vw;
+    min-height: 120px;
+    max-height: 180px;
+  }
 }

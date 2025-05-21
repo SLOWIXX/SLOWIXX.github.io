@@ -1,170 +1,161 @@
+/* Palette : 
+   Bleu foncé : #2F3E46
+   Blanc cassé : #F4F4F9
+   Vert : #57A773
+   Rose : #BA2C73
+*/
+
 @font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-  }
-  
-
-  body {
-  margin: 0;
-  padding: 0;
-  font-family: "Futura";
-  background-color: #F4F4F9;
-  overflow-x: hidden;
-  font-family: "Futura",  sans-serif;
-
 }
 
-
-
-h2 {
-    font-size: 24px; 
-    color: #2F3E46; 
-    margin: 0; 
-    font-family: "Futura",  sans-serif;
-
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura", sans-serif;
+  background-color: #F4F4F9;
+  color: #2F3E46;
+  overflow-x: hidden;
 }
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Futura', sans-serif;
-  color: #2F3E46;
-  margin-top: 5%;
+  color: #BA2C73;
+  margin-top: 3rem;
   font-weight: bold;
-
+  letter-spacing: 1px;
 }
 
 .sous-titre {
   text-align: center;
-  font-size: 1.5rem;
-  font-family: "Futura",  sans-serif;
+  font-size: 1.3rem;
   color: #2F3E46;
-  margin-top: 2%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.sous-titre-bold{
+.sous-titre-bold {
   text-align: center;
-  font-size: 1.5rem;
-  font-family: "Futura",  sans-serif;
-  color: #2F3E46;
-  margin-top: 2%;
+  font-size: 1.3rem;
+  color: #57A773;
   font-weight: bold;
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
 }
-
 
 .engagement-section {
-  background-color: #F4F4F9;
-  padding: 50px 20px;
-  font-family: "Futura",  sans-serif;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(47,62,70,0.07);
+  padding: 40px 24px;
+  margin: 32px auto 24px auto;
+  max-width: 900px;
 }
 
 .engagement-block {
-  max-width: 900px;
-  margin: 0 auto;
-  color: #426375; 
+  color: #2F3E46;
   font-size: 1.1rem;
   line-height: 1.7;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .engagement-block h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-top: 2rem;
-  font-family: "Futura",  sans-serif;
-
+  color: #BA2C73;
+  letter-spacing: 0.5px;
 }
 
 .engagement-block ul {
   padding-left: 1.5rem;
   margin-top: 0.5rem;
-  font-family: "Futura",  sans-serif;
-
 }
 
 .engagement-block li {
   margin-bottom: 0.4rem;
-  font-family: "Futura",  sans-serif;
-
+  position: relative;
+  padding-left: 1.2em;
+}
+.engagement-block li::before {
+  content: "•";
+  color: #57A773;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1;
 }
 
 .contact-presse {
-  font-family: Arial, sans-serif;
-  color: #5a3c30; 
-  font-family: "Futura",  sans-serif;
-  border: 1px solid #5a3c30;
-  border-top: none;
-  width: 100%;
+  background: #2F3E46;
+  color: #F4F4F9;
+  border-radius: 14px;
+  margin: 32px auto 24px auto;
+  max-width: 900px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(47,62,70,0.08);
 }
 
 .contact-titre {
-  background-color: #937099; 
-  padding: 10px 20px;
-  border-bottom: 1px solid #5a3c30;
-  font-family: "Futura",  sans-serif;
-
+  background-color: #BA2C73;
+  padding: 14px 24px;
+  border-bottom: 1px solid #BA2C73;
 }
 
 .contact-titre h2 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: normal;
-  font-family: "Futura",  sans-serif;
-
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
 }
 
 .contact-texte {
-  background-color: white;
-  padding: 15px 20px;
-  border-bottom: 1px solid #5a3c30;
-  font-family: "Futura",  sans-serif;
-
+  background-color: #F4F4F9;
+  color: #2F3E46;
+  padding: 16px 24px;
+  border-bottom: 1px solid #BA2C73;
 }
 
 .contact-infos {
   display: flex;
   text-align: center;
-  border-top: 1px solid #5a3c30;
-  font-family: "Futura",  sans-serif;
-
+  border-top: 1px solid #BA2C73;
+  background: #fff;
 }
 
 .contact-col {
   flex: 1;
-  padding: 20px;
-  background-color: white;
-  border-right: 1px solid #5a3c30;
+  padding: 18px;
+  color: #2F3E46;
   font-weight: bold;
+  border-right: 1px solid #F4F4F9;
 }
-
 .contact-col:last-child {
   border-right: none;
 }
-
 
 .reveal {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
@@ -172,16 +163,16 @@ h1 {
 
 /* Responsive styles */
 @media (max-width: 900px) {
-  .engagement-block {
-    padding: 0 10px;
-    font-size: 1rem;
+  .engagement-section, .contact-presse {
+    padding: 18px 6px;
+    max-width: 98vw;
   }
   .contact-infos {
     flex-direction: column;
   }
   .contact-col {
     border-right: none;
-    border-bottom: 1px solid #5a3c30;
+    border-bottom: 1px solid #F4F4F9;
     padding: 12px 10px;
   }
   .contact-col:last-child {
@@ -191,18 +182,18 @@ h1 {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
   }
   .sous-titre, .sous-titre-bold {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
   .engagement-section {
-    padding: 24px 5px;
+    padding: 12px 2px;
   }
   .engagement-block h2 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-top: 1rem;
   }
   .engagement-block {
@@ -210,10 +201,9 @@ h1 {
     padding: 0 2px;
   }
   .contact-titre h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .contact-infos {
-    flex-direction: column;
     font-size: 0.95rem;
   }
   .contact-col {
@@ -224,9 +214,9 @@ h1 {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .contact-titre h2 {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
