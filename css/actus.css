@@ -25,6 +25,7 @@
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #F4F4F9;
+  overflow-x: hidden;
 }
 
   .badge-eurocks {
@@ -118,9 +119,10 @@ h1 {
 .engagement-block {
   max-width: 900px;
   margin: 0 auto;
-  color: #5c2d20; 
+  color: #426375; 
   font-size: 1.1rem;
   line-height: 1.7;
+  font-weight: 500;
 }
 
 .engagement-block h2 {
@@ -231,7 +233,7 @@ nav {
   display: flex;
   gap: 2rem; /* espace entre les liens */
   margin: 0;
-  margin-left: 20%;
+  margin-left: 18%;
   background: none;
   border: none;
   font-family: Futura;
