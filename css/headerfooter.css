@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Book.woff2') format('woff2'),
+         url('../fonts/futura/Futura-Book.woff') format('woff'),
+         url('../fonts/futura/Futura-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/futura/Futura-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/futura/Futura-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    background-color: #2f3e46;
+    color: #dcdcd2;
+    border-top: 2px solid #bcd2c2;
+    padding: 0;
+    font-family: "Futura",  sans-serif;
+
+  }
+  
+  .footer-logo {
+    width: 3rem;
+    margin-bottom: 0;
+    padding-top: 10px; 
+  }
+  
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0.5rem; 
+  }
+  
+  .socials img {
+    width: 1.5rem;
+    height: 36px;
+    filter: brightness(0) invert(0.9);
+    cursor: pointer;
+    margin: 0; 
+  }
+  
+  #suivez {
+    font-size: 0.8rem;
+    margin: 0;
+    font-family: "Futura",  sans-serif;
+
+  }
+  
+  hr {
+    margin-top: 1rem; 
+    margin-bottom: 1rem
+  }
+  
+  
+  .footer-texte-droits {
+      color: #CAD2C5;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      font-family: "Futura",  sans-serif;
+
+  }
+  
+  .socials img:hover {
+    filter: brightness(1.5) drop-shadow(0 0 6px #7bb274);
+    transform: scale(1.2) rotate(-10deg);
+  }
+  
+  #barre {
+      display: inline-block;
+      font-size: 1rem; 
+      line-height: 3rem; 
+      vertical-align: middle;
+    }
+  
+  
+  .footer-mentions {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #CAD2C5;
+    margin-left: 5%;
+    font-family: "Futura",  sans-serif;
+
+  }
+  
+  .footer-mentions a {
+    color: #CAD2C5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: -15rem; 
+  }
+  
+  .alignement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+  }
+
+
+  
+/* HEADER */
+
+
+.top-bar {
+    position: relative;
+    height: 7rem;
+    background-color: #1f2f38;
+  }
+  
+  
+  
+  .logo img {
+    width: 3.7rem;
+    height: auto;
+  }
+  
+  .logo {
+    margin: 0.7rem;
+  }
+  
+  .header-alignement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  nav {
+      width:  100%;
+  
+  
+  }
+  .menu-bar {
+    display: flex;
+    gap: 2rem; 
+    margin: 0;
+    margin-left: 18%;
+    background: none;
+    border: none;
+    font-family: "Futura",  sans-serif;
+    align-items: center;
+  }   
+  
+  .menu-bar a {
+    color: #CAD2C5;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+      padding: 0.5rem 7%;
+  }
+  
+  .menu-bar a{
+    transition: color 0.3s, background 0.3s, transform 0.2s;
+  }
+  
+  .menu-bar a:hover {
+    color: #7bb274; 
+    background: rgba(236, 240, 233, 0.08);
+    transform: translateY(-3px) scale(1.08);
+    border-radius: 8px;
+  }
+  
