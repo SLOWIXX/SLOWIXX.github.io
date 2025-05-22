@@ -364,3 +364,81 @@ h2 {
 .site-footer {
   margin-top: 24px; /* réduit l'écart au-dessus du footer */
 }
+
+.causes {
+  background: #1f2f38;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.causes-title {
+  color: #F7C100;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-family: "Futura", sans-serif;
+  letter-spacing: 2px;
+}
+
+.causes-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.cause-item {
+  background: #2f3e46;
+  border-radius: 20px;
+  padding: 25px 20px;
+  width: 200px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cause-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(247, 193, 0, 0.4);
+}
+
+.cause-item img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.cause-item:hover img {
+  transform: scale(1.1);
+}
+
+.cause-label {
+  color: #dcdcd2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Futura", sans-serif;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .causes-list {
+    gap: 1.5rem;
+  }
+
+  .cause-item {
+    width: 140px;
+    padding: 20px 12px;
+  }
+
+  .cause-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cause-label {
+    font-size: 1rem;
+  }
+}
