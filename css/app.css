@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Book.woff2') format('woff2'),
+         url('../fonts/futura/Futura-Book.woff') format('woff'),
+         url('../fonts/futura/Futura-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/futura/Futura-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/futura/Futura-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura";
+  background-color: #1f2f38;
+  color: #dcdcd2;
+}
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Futura', sans-serif;
+      background-color: #25343b;
+      color: #dcdcd2;
+    }
+
+.app-section {
+  padding: 40px 20px 60px 20px; /* padding haut réduit */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.app-section h1 {
+  font-size: 2.5rem;
+  color: #F7C100;
+  margin-bottom: 1rem;
+  margin-top: 0; /* supprime toute marge haute */
+  letter-spacing: 1px;
+}
+
+
+    .app-section p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .qrcode {
+      width: 180px;
+      height: auto;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-app {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      background-color: #F7C100;
+      color: #1f2f38;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Futura', sans-serif;
+    }
+
+    .btn-app:hover {
+      background-color: #ddb300;
+    }
+
+    @media (max-width: 600px) {
+      .app-section h1 {
+        font-size: 1.8rem;
+      }
+      .app-section p {
+        font-size: 1rem;
+      }
+      .qrcode {
+        width: 140px;
+      }
+    }
+
+
+    .app-features {
+  margin-top: 60px;
+  padding: 0 20px 60px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #dcdcd2;
+  text-align: center;
+  font-family: 'Futura', sans-serif;
+}
+
+.app-features h2 {
+  font-size: 2rem;
+  color: #F7C100;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature {
+  background-color: #2f3e46;
+  padding: 24px 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(247, 193, 0, 0.2);
+}
+
+.feature h3 {
+  color: #F7C100;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.feature.full {
+  grid-column: span 2;
+}
+
+@media (max-width: 700px) {
+  .feature.full {
+    grid-column: span 1;
+  }
+}
