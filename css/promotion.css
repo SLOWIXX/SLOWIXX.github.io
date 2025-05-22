@@ -26,6 +26,21 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+.texte-pitch,
+.video-pitch,
+.site-footer,
+.intentions-flex,
+.intentions-flex .texte-pitch,
+.intentions-flex img,
+.site-footer .footer-logo,
+.site-footer .footer-texte-droits,
+.site-footer .footer-mentions a {
+  font-family: "Futura", sans-serif !important;
+}
+
+
 h1 {
   text-align: center;
   font-size: 2.7rem;
@@ -121,16 +136,63 @@ h2 {
   margin: 1.5rem 0;
 }
 
-@media (max-width: 900px) {
-  .texte-pitch {
-    font-size: 1.1rem;
-    padding: 1rem 1rem 1rem 1rem;
+.intentions-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    gap: 3.5rem;
+  max-width: 1200px;     
+  margin: 2.5rem auto 2.5rem auto;
+}
+
+.intentions-flex img {
+  max-width: 370px;
+  width: 100%;
+  aspect-ratio: 1 / 1;     
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  object-fit: cover;
+  background: #2f3e46;
+}
+
+.intentions-flex .texte-pitch {
+  margin: 0;
+  max-width: 750px;
+  flex: 1;
+  min-width: 320px;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+
+@media (max-width: 1200px) {
+  .intentions-flex {
+    max-width: 98vw;
+    gap: 2rem;
+  }
+  .intentions-flex img {
+    max-width: 270px;
+  }
+  .intentions-flex .texte-pitch {
     max-width: 95vw;
   }
-  .video-pitch iframe {
+}
+
+@media (max-width: 900px) {
+  .intentions-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
     max-width: 98vw;
-    height: 45vw;
-    max-height: 260px;
+  }
+  .intentions-flex img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .intentions-flex .texte-pitch {
+    max-width: 100%;
+    min-width: 0;
   }
 }
 
