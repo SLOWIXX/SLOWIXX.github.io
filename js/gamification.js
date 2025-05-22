@@ -34,7 +34,6 @@ function showPopup() {
     }
 }
 
-// Vérifie si un objectif est accompli
 function markGoal(goalNumber) {
     if (!goals[goalNumber].visited) {
         goals[goalNumber].visited = true;
@@ -44,18 +43,15 @@ function markGoal(goalNumber) {
         saveGoals();
         showPopup();
     }
-    // Si les 3 premiers sont validés, on valide le 4ème
     if (goals[1].visited && goals[2].visited && goals[3].visited && !goals[4].visited) {
         markGoal(4);
     }
 }
 
-// Sauvegarde dans le localStorage
 function saveGoals() {
     localStorage.setItem('eurocks_goals', JSON.stringify(goals));
 }
 
-// Charge depuis le localStorage
 function loadGoals() {
     const saved = localStorage.getItem('eurocks_goals');
     if (saved) {
@@ -71,21 +67,17 @@ function loadGoals() {
     }
 }
 
-// Détection de la page
 document.addEventListener('DOMContentLoaded', () => {
     loadGoals();
 
-    // Objectif 1 : Lire le communiqué de presse (actus.html)
     if (window.location.pathname.endsWith('actus.html')) {
         markGoal(1);
     }
 
-    // Objectif 2 : Regarder le film (promotion.html)
     if (window.location.pathname.endsWith('promotion.html')) {
         let filmValidated = goals[2].visited;
         function checkScrollFilm() {
             if (filmValidated) return;
-            // Si l'utilisateur a scrollé à 95% ou plus de la page
             const scrollPosition = window.scrollY + window.innerHeight;
             const pageHeight = document.documentElement.scrollHeight;
             if (scrollPosition >= pageHeight * 0.95) {
@@ -97,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', checkScrollFilm);
     }
 
-    // Objectif 3 : Jouer au jeu (jeu.html)
     if (window.location.pathname.endsWith('jeu.html')) {
         const iframe = document.querySelector('iframe');
         if (iframe) {

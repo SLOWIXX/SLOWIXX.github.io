@@ -3,7 +3,7 @@ let speed = 0.4;
 
 function animate() {
   const firstCard = carousel.children[0];
-  const firstCardWidth = firstCard.offsetWidth + 20; // width + gap
+  const firstCardWidth = firstCard.offsetWidth + 20;
 
   carousel.style.transform = `translateX(-${speed}px)`;
 

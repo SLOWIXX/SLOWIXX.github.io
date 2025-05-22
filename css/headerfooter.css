@@ -117,7 +117,39 @@
     gap: 1rem; 
   }
 
+.site-footer {
+  background: #2F3E46;
+  color: #F4F4F9;
+  margin-top: 24px;
+  padding-top: 2rem;
+  border-top: 4px solid #BA2C73;
+}
 
+.site-footer .footer-logo {
+  filter: grayscale(0) brightness(1.1);
+}
+
+.site-footer .socials #suivez {
+  color: #57A773;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.site-footer .footer-texte-droits,
+.site-footer .footer-mentions a {
+  color: #F4F4F9;
+}
+
+.site-footer .footer-mentions a:hover {
+  color: #BA2C73;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #57A773;
+  margin: 1.5rem 0;
+}
   
 /* HEADER */
 

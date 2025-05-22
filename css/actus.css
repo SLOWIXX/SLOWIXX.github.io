@@ -43,6 +43,10 @@ h1 {
   letter-spacing: 1px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .sous-titre {
   text-align: center;
   font-size: 1.3rem;
@@ -161,7 +165,6 @@ h1 {
   transform: translateY(0);
 }
 
-/* Responsive styles */
 @media (max-width: 900px) {
   .engagement-section, .contact-presse {
     padding: 18px 6px;
