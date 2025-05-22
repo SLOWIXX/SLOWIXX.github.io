@@ -26,19 +26,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Futura";
-  background-color: #1f2f38;
+  background-color: #25343b;
   color: #dcdcd2;
   overflow-x: hidden;
 }
 
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Futura', sans-serif;
-      background-color: #25343b;
-      color: #dcdcd2;
-    }
 
 .app-section {
   padding: 40px 20px 60px 20px; /* padding haut réduit */
@@ -192,4 +184,30 @@ body {
   .app-features h2 {
     font-size: 1.5rem;
   }
+}
+
+/* Ajoute la police Futura sur tous les textes */
+body,
+.app-section,
+.app-section h1,
+.app-section p,
+.btn-app,
+.app-features,
+.app-features h2,
+.features-grid,
+.feature,
+.feature h3,
+.feature p {
+  font-family: 'Futura', sans-serif !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

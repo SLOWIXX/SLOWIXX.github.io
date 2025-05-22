@@ -30,13 +30,9 @@ h1,
 h2,
 .texte-pitch,
 .video-pitch,
-.site-footer,
 .intentions-flex,
 .intentions-flex .texte-pitch,
-.intentions-flex img,
-.site-footer .footer-logo,
-.site-footer .footer-texte-droits,
-.site-footer .footer-mentions a {
+.intentions-flex img {
   font-family: "Futura", sans-serif !important;
 }
 
@@ -102,39 +98,7 @@ h2 {
   transform: translateY(0);
 }
 
-.site-footer {
-  background: #2F3E46;
-  color: #dcdcd2;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 4px solid #F7C100;
-}
 
-.site-footer .footer-logo {
-  filter: grayscale(0) brightness(1.1);
-}
-
-.site-footer .socials #suivez {
-  color: #F7C100;
-  font-weight: bold;
-  margin-right: 1rem;
-}
-
-.site-footer .footer-texte-droits,
-.site-footer .footer-mentions a {
-  color: #dcdcd2;
-}
-
-.site-footer .footer-mentions a:hover {
-  color: #F7C100;
-  text-decoration: underline;
-}
-
-.site-footer hr {
-  border: none;
-  border-top: 1px solid #F7C100;
-  margin: 1.5rem 0;
-}
 
 .intentions-flex {
   display: flex;

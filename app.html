@@ -28,16 +28,16 @@
   </header>
 
   <section class="app-section">
-    <h1>Télécharge l’application Eurock’Pass</h1>
-    <p>
+    <h1 class="fade-in">Télécharge l’application Eurock’Pass</h1>
+    <p class="fade-in">
       Accède à ton ticket, retrouve la carte du festival, participe à la roulette des lots, découvre les artistes à l’affiche et commande ton repas à l’avance.<br><br>
       Scanne ce QR code pour installer l’appli gratuitement sur ton téléphone.
     </p>
-    <img src="img/qrcode.png" alt="QR Code" class="qrcode" />
-    <button class="btn-app">En savoir plus</button>
+    <img src="img/qrcode.png" alt="QR Code" class="qrcode fade-in" />
+    <button class="btn-app fade-in">En savoir plus</button>
   </section>
 
-  <section class="app-features">
+  <section class="app-features fade-in">
   <h2>Fonctionnalités de l'application</h2>
   <div class="features-grid">
     <div class="feature">
@@ -64,30 +64,46 @@
 </section>
 
 
-  <footer class="site-footer">
-    <div class="alignement">
-      <img src="img/logo.png" alt="Logo" class="footer-logo" />
+
+<footer class="site-footer">
+  <div class="alignement">
+      <img src="img/logo.png" alt="Logo" class="footer-logo">
       <div class="socials">
         <span id="suivez">SUIVEZ NOUS !</span>
-        <img src="img/instagram.svg" alt="Instagram" />
-        <img src="img/facebook.svg" alt="Facebook" />
-        <img src="img/tiktok.svg" alt="TikTok" />
-        <img src="img/x.svg" alt="X" />
-        <img src="img/youtube.svg" alt="YouTube" />
+        <img src="img/instagram.svg" alt="Instagram">
+        <img src="img/facebook.svg" alt="Facebook">
+        <img src="img/tiktok.svg" alt="TikTok">
+        <img src="img/x.svg" alt="X">
+        <img src="img/youtube.svg" alt="YouTube">
       </div>
-    </div>
+      </div>
 
-    <hr />
+  <hr>
 
-    <p class="footer-texte-droits">
-      2025 EUROCK’PASS. Tous droits réservés.
-    </p>
-    <div class="footer-mentions">
-      <a href="#">Contact</a>
-      <span id="barre">|</span>
-      <a href="#">Mentions légales</a>
-    </div>
-  </footer>
+  <p class="footer-texte-droits">2025 EUROCK’PASS. Tous droits réservés.
+  </p>
+  <div class="footer-mentions">
+ <a href="#">Contact</a>
+          <span id="barre">|</span>
+          <a href="#">Mentions légales</a>
 
+            </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(el => observer.observe(el));
+  });
+</script>
 </body>
 </html>

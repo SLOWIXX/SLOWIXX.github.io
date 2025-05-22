@@ -355,15 +355,13 @@ h2 {
 .centre {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* évite le centrage vertical complet */
+  align-items: flex-start; 
   min-height: unset;
   height: auto;
-  margin-bottom: 24px; /* réduit l'écart avec le footer */
+  margin-bottom: 24px;
 }
 
-.site-footer {
-  margin-top: 24px; /* réduit l'écart au-dessus du footer */
-}
+
 
 .causes {
   background: #1f2f38;
