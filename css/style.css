@@ -279,6 +279,7 @@ h2 {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Futura", sans-serif; 
 }
 
 .goal-item {
@@ -289,6 +290,7 @@ h2 {
   background: #3a4d59;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-family: "Futura", sans-serif; 
 }
 
 .goal-item:hover {

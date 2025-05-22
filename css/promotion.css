@@ -3,70 +3,77 @@
     src: url('../fonts/futura/Futura-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-  }
-  
-
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #F4F4F9;
-  font-family: "Futura",  sans-serif;
-
+  font-family: "Futura", sans-serif;
+  background-color: #25343b;
+  color: #dcdcd2;
+  min-height: 100vh;
 }
 
-
-
 h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #2F3E46;
-    font-family: "Futura",  sans-serif;
-
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #F7C100;
+  margin-top: 2.5rem;
+  letter-spacing: 1px;
 }
 
 h2 {
-    margin-top: 5rem;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2F3E46;
-    text-align: center;
-    font-family: "Futura",  sans-serif;
-
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F7C100;
+  text-align: center;
+  font-family: "Futura", sans-serif;
 }
 
 .texte-pitch {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #426375;
-    margin-left: 5%;
-    font-family: "Futura",  sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #dcdcd2;
+  background: #2f3e46;
+  border-left: 6px solid #F7C100;
+  border-radius: 0 18px 18px 0;
+  margin: 2rem auto 2.5rem auto;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  max-width: 800px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
 
+.video-pitch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0 3rem 0;
 }
 
 .video-pitch iframe {
-
-  width: 60%;
-  height: 40rem;
+  width: 100%;
+  max-width: 700px;
+  height: 40vw;
+  max-height: 400px;
+  min-height: 220px;
   border: none;
-  margin-left: 20%;
-  margin-top: 3rem;
+  border-radius: 18px;
+  background: #1f2f38;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
 
 .fade-in {
@@ -78,4 +85,72 @@ h2 {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.site-footer {
+  background: #2F3E46;
+  color: #dcdcd2;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 4px solid #F7C100;
+}
+
+.site-footer .footer-logo {
+  filter: grayscale(0) brightness(1.1);
+}
+
+.site-footer .socials #suivez {
+  color: #F7C100;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.site-footer .footer-texte-droits,
+.site-footer .footer-mentions a {
+  color: #dcdcd2;
+}
+
+.site-footer .footer-mentions a:hover {
+  color: #F7C100;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #F7C100;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 900px) {
+  .texte-pitch {
+    font-size: 1.1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    max-width: 95vw;
+  }
+  .video-pitch iframe {
+    max-width: 98vw;
+    height: 45vw;
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .texte-pitch {
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    border-radius: 0 10px 10px 0;
+  }
+  .video-pitch iframe {
+    height: 38vw;
+    min-height: 120px;
+    max-height: 180px;
+  }
 }

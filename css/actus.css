@@ -1,187 +1,219 @@
+/* Palette : 
+   Bleu foncé : #2F3E46
+   Blanc cassé : #F4F4F9
+   Jaune accent : #F7C100
+   Gris clair : #dcdcd2 / #CAD2C5
+*/
+
 @font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+@font-face {
     font-family: 'Futura';
     src: url('../fonts/futura/Futura-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-  }
-  
-
-  body {
-  margin: 0;
-  padding: 0;
-  font-family: "Futura";
-  background-color: #F4F4F9;
-  overflow-x: hidden;
-  font-family: "Futura",  sans-serif;
-
 }
 
-
-
-h2 {
-    font-size: 24px; 
-    color: #2F3E46; 
-    margin: 0; 
-    font-family: "Futura",  sans-serif;
-
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura", sans-serif;
+  background-color: #25343b;
+  color: #dcdcd2;
+  overflow-x: hidden;
 }
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Futura', sans-serif;
-  color: #2F3E46;
-  margin-top: 5%;
+  color: #F7C100;
+  margin-top: 3rem;
   font-weight: bold;
+  letter-spacing: 1px;
+}
 
+ul {
+  list-style-type: none;
 }
 
 .sous-titre {
   text-align: center;
-  font-size: 1.5rem;
-  font-family: "Futura",  sans-serif;
-  color: #2F3E46;
-  margin-top: 2%;
+  font-size: 1.3rem;
+  color: #dcdcd2;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.sous-titre-bold{
+.sous-titre-bold {
   text-align: center;
-  font-size: 1.5rem;
-  font-family: "Futura",  sans-serif;
-  color: #2F3E46;
-  margin-top: 2%;
+  font-size: 1.3rem;
+  color: #F7C100;
   font-weight: bold;
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
 }
-
 
 .engagement-section {
-  background-color: #F4F4F9;
-  padding: 50px 20px;
-  font-family: "Futura",  sans-serif;
+  background: #2f3e46;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  padding: 40px 24px;
+  margin: 32px auto 24px auto;
+  max-width: 900px;
+  border-left: 6px solid #F7C100;
 }
 
 .engagement-block {
-  max-width: 900px;
-  margin: 0 auto;
-  color: #426375; 
+  color: #dcdcd2;
   font-size: 1.1rem;
   line-height: 1.7;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .engagement-block h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-top: 2rem;
-  font-family: "Futura",  sans-serif;
-
+  color: #F7C100;
+  letter-spacing: 0.5px;
 }
 
 .engagement-block ul {
   padding-left: 1.5rem;
   margin-top: 0.5rem;
-  font-family: "Futura",  sans-serif;
-
 }
 
 .engagement-block li {
   margin-bottom: 0.4rem;
-  font-family: "Futura",  sans-serif;
-
+  position: relative;
+  padding-left: 1.2em;
+}
+.engagement-block li::before {
+  content: "•";
+  color: #F7C100;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1;
 }
 
 .contact-presse {
-  font-family: Arial, sans-serif;
-  color: #5a3c30; 
-  font-family: "Futura",  sans-serif;
-  border: 1px solid #5a3c30;
-  border-top: none;
-  width: 100%;
+  background: #2f3e46;
+  color: #dcdcd2;
+  border-radius: 14px;
+  margin: 32px auto 24px auto;
+  max-width: 900px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  border-left: 6px solid #F7C100;
 }
 
 .contact-titre {
-  background-color: #937099; 
-  padding: 10px 20px;
-  border-bottom: 1px solid #5a3c30;
-  font-family: "Futura",  sans-serif;
-
+  background-color: #1f2f38;
+  padding: 14px 24px;
+  border-bottom: 1px solid #F7C100;
 }
 
 .contact-titre h2 {
   margin: 0;
-  font-size: 2rem;
-  font-weight: normal;
-  font-family: "Futura",  sans-serif;
-
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #F7C100;
 }
 
 .contact-texte {
-  background-color: white;
-  padding: 15px 20px;
-  border-bottom: 1px solid #5a3c30;
-  font-family: "Futura",  sans-serif;
-
+  background-color: #2f3e46;
+  color: #dcdcd2;
+  padding: 16px 24px;
+  border-bottom: 1px solid #F7C100;
 }
 
 .contact-infos {
   display: flex;
   text-align: center;
-  border-top: 1px solid #5a3c30;
-  font-family: "Futura",  sans-serif;
-
+  border-top: 1px solid #F7C100;
+  background: #1f2f38;
 }
 
 .contact-col {
   flex: 1;
-  padding: 20px;
-  background-color: white;
-  border-right: 1px solid #5a3c30;
+  padding: 18px;
+  color: #dcdcd2;
   font-weight: bold;
+  border-right: 1px solid #2f3e46;
 }
-
 .contact-col:last-child {
   border-right: none;
 }
-
 
 .reveal {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Footer harmonisé */
+.site-footer {
+  background: #1f2f38;
+  color: #dcdcd2;
+  margin-top: 24px;
+  padding-top: 2rem;
+  border-top: 4px solid #F7C100;
+}
+
+.site-footer .footer-logo {
+  filter: grayscale(0) brightness(1.1);
+}
+
+.site-footer .socials #suivez {
+  color: #F7C100;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.site-footer .footer-texte-droits,
+.site-footer .footer-mentions a {
+  color: #dcdcd2;
+}
+
+.site-footer .footer-mentions a:hover {
+  color: #F7C100;
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #F7C100;
+  margin: 1.5rem 0;
+}
+
 /* Responsive styles */
 @media (max-width: 900px) {
-  .engagement-block {
-    padding: 0 10px;
-    font-size: 1rem;
+  .engagement-section, .contact-presse {
+    padding: 18px 6px;
+    max-width: 98vw;
   }
   .contact-infos {
     flex-direction: column;
   }
   .contact-col {
     border-right: none;
-    border-bottom: 1px solid #5a3c30;
+    border-bottom: 1px solid #2f3e46;
     padding: 12px 10px;
   }
   .contact-col:last-child {
@@ -191,18 +223,18 @@ h1 {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
   }
   .sous-titre, .sous-titre-bold {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
   .engagement-section {
-    padding: 24px 5px;
+    padding: 12px 2px;
   }
   .engagement-block h2 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-top: 1rem;
   }
   .engagement-block {
@@ -210,10 +242,9 @@ h1 {
     padding: 0 2px;
   }
   .contact-titre h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .contact-infos {
-    flex-direction: column;
     font-size: 0.95rem;
   }
   .contact-col {
@@ -224,9 +255,9 @@ h1 {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .contact-titre h2 {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
