@@ -28,6 +28,7 @@ body {
   font-family: "Futura";
   background-color: #1f2f38;
   color: #dcdcd2;
+  overflow-x: hidden;
 }
 
 
@@ -124,7 +125,7 @@ body {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -154,10 +155,41 @@ body {
 
 .feature.full {
   grid-column: span 2;
+  width: 100%;
 }
 
 @media (max-width: 700px) {
   .feature.full {
     grid-column: span 1;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature,
+  .feature.full {
+    grid-column: unset !important;
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .feature p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .app-features h2 {
+    font-size: 1.5rem;
   }
 }
